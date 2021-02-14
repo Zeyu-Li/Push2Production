@@ -1,10 +1,17 @@
 import react from 'react';
-import { render } from 'react-dom';
-import AssignHeat from './AssignHeat';
-
+import {styles} from './styles.js'
 
 export default function Summary() {
+    
     return (
-        <AssignHeat />
+        <>
+            <div style={styles.container}>
+                <h1 style={{fontSize: "4em"}}>Summary</h1>
+            </div>
+            
+            <div style={styles.calendar}>
+                <h2>summary</h2>
+            </div>
+        </>
     )
 }
