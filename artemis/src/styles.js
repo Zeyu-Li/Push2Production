@@ -3,7 +3,7 @@ export const styles = {
         width: "90vw",
         height: "90vh",
         marginLeft: "5vw",
-        backgroundColor: "gray",
+        backgroundColor: "#393e42",
         borderRadius: "15px",
         padding: "20px",
     }, 

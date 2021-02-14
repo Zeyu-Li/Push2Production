@@ -66,14 +66,14 @@ p, h1, h2, h3 {
 
 /* other styles */
 .calenderAddButton:hover {
-  z-index: 10001;
+  z-index: 1022;
   background-color: #1d8aff!important;
 }
 
 
 /* popup */
 .popup, .edit {
-  z-index: 10000;
+  z-index: 1021;
   position: fixed;
   top: 0;
   right: 0;
@@ -108,6 +108,10 @@ p, h1, h2, h3 {
   margin: 1% auto;
   padding: 5px 10px;
   border-radius: 4px;
+}
+
+.day_popup {
+  width: 90vw;
 }
 
 /* item button */

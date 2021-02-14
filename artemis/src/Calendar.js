@@ -3,10 +3,12 @@ import {styles} from './styles.js'
 
 export default function Calendar() {
     const [showPopup, setShowPopup] = useState(false)
+    const [showDayView, setDayView] = useState(false)
     const [newDescription, setnewItem] = useState("")
     const [date, setDate] = useState("")
     const [time, setTime] = useState("")
     
+    // TODO: new view
     return (
         <>
             <div style={styles.container}>
@@ -26,6 +28,16 @@ export default function Calendar() {
                     <input style={{marginBottom: "20px"}} placeholder="Enter Time" type="time" id="to_add" onChange={setTime}/>
                     <button className="add-item inline blue" onClick={()=> {setShowPopup(!showPopup)}}>Submit</button>
                     <button className="add-item red inline red" onClick={()=> {setShowPopup(!showPopup)}}>Cancel</button>
+                </div>
+            </div>: <></>}
+
+            {showDayView ? 
+            <div className="popup" >
+                <div className="popup_container day_popup">
+                    <p style={{fontSize: "20px"}}>Day View</p>
+                    <div style={{height: "75vh", backgroundColor: "#212529"}}>
+                        <p>Day View</p>
+                    </div>
                 </div>
             </div>: <></>}
             
