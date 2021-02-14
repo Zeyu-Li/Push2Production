@@ -37,15 +37,16 @@ export default function Summary() {
                 <h1 style={{fontSize: "4em"}}>Summary</h1>
             </div>
             
+            {/* Heatmap of events. */}
+            <div style={styles.heatmap_container}>
+                <AssignHeat data={evData}/>
+            </div>
+
             {/* Deadlines summary. */}
             <div style={styles.calendar}>
-                <h2>summary</h2>
-            </div>
-            <div style={styles.calendar}>
-                <h2>summary</h2>
+                <h2>Deadlines</h2>
             </div>
             <Deadlines />
-            <AssignHeat data={evData}/>
         </>
     )
 }

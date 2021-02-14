@@ -30,4 +30,15 @@ export const styles = {
         backgroundColor: "#007bff",
         color: "whitesmoke",
     },
+    heatmap_container: {
+        width: "90vw",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        marginTop: "5vh",
+        marginBottom: "3vh",
+        marginLeft: "50px",
+        marginRight: "50px",
+        color: "whitesmoke",
+    },
 }
