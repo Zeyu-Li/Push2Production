@@ -1,6 +1,8 @@
 import react from 'react';
 import {styles} from './styles.js'
 
+import Deadlines from './Deadlines.js'
+
 export default function Summary() {
     
     return (
@@ -12,6 +14,7 @@ export default function Summary() {
             <div style={styles.calendar}>
                 <h2>summary</h2>
             </div>
+            <Deadlines />
         </>
     )
 }

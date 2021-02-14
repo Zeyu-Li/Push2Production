@@ -28,12 +28,12 @@ export default function AssignHeat() {
     xLabelWidth={50}
     data={data}
     squares
-    onClick={(x, y) => alert(`Clicked ${x}, ${y}`)}
+    //onClick={(x, y) => alert(`Clicked ${x}, ${y}`)}
     cellStyle={(background, value, min, max, data, x, y) => ({
       background: `rgba(66, 86, 244, ${1 - (max - value) / (max - min)})`,
       fontSize: "11px",
     })}
-    cellRender={value => value && `${value}%`}
+    //cellRender={value => value && `${value}%`}
     title={(value, unit) => `${value}`}
   />
   )
