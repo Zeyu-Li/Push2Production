@@ -1,7 +1,8 @@
 import react from 'react';
-import {styles} from './styles.js'
+import {styles} from './styles.js';
 
-import Deadlines from './Deadlines.js'
+import Deadlines from './Deadlines.js';
+import AssignHeat from './AssignHeat.js';
 
 export default function Summary() {
     
@@ -15,6 +16,7 @@ export default function Summary() {
                 <h2>summary</h2>
             </div>
             <Deadlines />
+            <AssignHeat />
         </>
     )
 }
