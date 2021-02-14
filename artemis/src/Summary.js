@@ -6,6 +6,29 @@ import AssignHeat from './AssignHeat.js';
 
 export default function Summary() {
     
+    // Temporary for working with the dummy data.
+    const evData = [
+        {
+        day: "2015-03-25",
+        events: [
+            { event: "Midterm", description: "A gross midterm.", time: "4:00 PM", duration: "1 hour" },
+            { event: "Midterm", description: "A gross midterm.", time: "4:00 PM", duration: "1 hour" },
+            { event: "Midterm", description: "A gross midterm.", time: "4:00 PM", duration: "1 hour" },
+            { event: "Midterm", description: "A gross midterm.", time: "4:00 PM", duration: "1 hour" },
+            { event: "Midterm", description: "A gross midterm.", time: "4:00 PM", duration: "1 hour" }
+        ]
+        },
+        
+        {
+        day: "2015-04-25",
+        events: [
+            { event: "Midterm", description: "A gross midterm.", time: "4:00 PM", duration: "1 hour" },
+            { event: "Midterm", description: "A gross midterm.", time: "4:00 PM", duration: "1 hour" },
+            { event: "Midterm", description: "A gross midterm.", time: "4:00 PM", duration: "1 hour" }
+        ]
+        },
+    ];
+
     return (
         <>
             <div style={styles.container}>
@@ -16,7 +39,7 @@ export default function Summary() {
                 <h2>summary</h2>
             </div>
             <Deadlines />
-            <AssignHeat />
+            <AssignHeat data={evData}/>
         </>
     )
 }

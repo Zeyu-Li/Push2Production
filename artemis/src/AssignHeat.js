@@ -2,34 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import HeatMap from 'react-heatmap-grid';
 
-export default function AssignHeat() {
+export default function AssignHeat(props) {
 
-  // Temporary for working with the dummy data.
-  const evData = [
-    {
-      day: "2015-03-25",
-      events: [
-        { event: "Midterm", description: "A gross midterm.", time: "4:00 PM", duration: "1 hour" },
-        { event: "Midterm", description: "A gross midterm.", time: "4:00 PM", duration: "1 hour" },
-        { event: "Midterm", description: "A gross midterm.", time: "4:00 PM", duration: "1 hour" },
-        { event: "Midterm", description: "A gross midterm.", time: "4:00 PM", duration: "1 hour" },
-        { event: "Midterm", description: "A gross midterm.", time: "4:00 PM", duration: "1 hour" }
-      ]
-    },
-    
-    {
-      day: "2015-04-25",
-      events: [
-        { event: "Midterm", description: "A gross midterm.", time: "4:00 PM", duration: "1 hour" },
-        { event: "Midterm", description: "A gross midterm.", time: "4:00 PM", duration: "1 hour" },
-        { event: "Midterm", description: "A gross midterm.", time: "4:00 PM", duration: "1 hour" }
-      ]
-    },
-  ];
 
   // Get all days from the data.
-  const days = new Array(evData.length);
-  for (var i = 0; i < evData.length; i++) days[i] = new Date(evData[i].day);
+  const days = new Array(props.data.length);
+  for (var i = 0; i < props.data.length; i++) days[i] = new Date(props.data[i].day);
   
   // Get the range of days given the data.
   const firstDay = new Date(Math.min.apply(null, days));
