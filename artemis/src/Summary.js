@@ -1,5 +1,6 @@
 import react from 'react';
 import {styles} from './styles.js';
+import './App.css';
 
 import Deadlines from './Deadlines.js';
 import AssignHeat from './AssignHeat.js';
@@ -31,10 +32,15 @@ export default function Summary() {
 
     return (
         <>
+            {/* Summary Page header. */}
             <div style={styles.container}>
                 <h1 style={{fontSize: "4em"}}>Summary</h1>
             </div>
             
+            {/* Deadlines summary. */}
+            <div style={styles.calendar}>
+                <h2>summary</h2>
+            </div>
             <div style={styles.calendar}>
                 <h2>summary</h2>
             </div>
